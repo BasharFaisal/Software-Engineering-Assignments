@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+
+    {% load custom_filters %}
+
+    <p>النص الأصلي: {{ "Hello Django" }}</p>
+    <p>النص المعكوس: {{ "Hello Django"|reverse_string }}</p>
+
+    <ul>
+        <li><a href="{% url 'show' %}">Show</a></li>
+        <li><a href="{% url 'add' %}">add</a></li>
+        <li><a href="{% url 'delete' %}">delete</a></li>
+        <li><a href="{% url 'idet' %}">idet</a></li>
+    </ul>
+</body>
+</html>
